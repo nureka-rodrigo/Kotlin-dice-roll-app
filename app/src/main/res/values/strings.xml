@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Dice Roll</string>
-    <string name="button">Roll</string>
+    <string name="Button">Roll</string>
+    <string name="ImageViewDescription">Displays dice image corresponding to rolled dice value</string>
 </resources>
