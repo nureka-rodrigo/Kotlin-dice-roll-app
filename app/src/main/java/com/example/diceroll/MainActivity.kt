@@ -7,8 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 
 /**
- * This activity allows the user to roll a dice and view the result
- * on the screen.
+ * This activity allows the user to roll a dice and view the result on the screen.
  */
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
