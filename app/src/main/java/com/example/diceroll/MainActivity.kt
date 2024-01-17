@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         val rollButton: Button = findViewById(R.id.button)
 
         // Display the initial dice roll result
-        displayText(roll())
+        rollDice()
 
         // Set a click listener for the roll button
         rollButton.setOnClickListener {
@@ -27,23 +27,18 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Dice Rolled!", Toast.LENGTH_SHORT).show()
 
             // Update and display the new dice roll result
-            displayText(roll())
+            rollDice()
         }
     }
 
-    // Return a random number between 1-6 representing a dice roll
-    private fun roll(): Int {
-        return (1..6).random()
-    }
-
     // Display the rolled dice value on the screen and update the dice image accordingly
-    private fun displayText(value: Int) {
+    private fun rollDice() {
         // Find the text view and image view in the layout
         val rollText: TextView = findViewById(R.id.textview)
         val diceImage: ImageView = findViewById(R.id.imageView)
 
         // Set the text view to display the current dice value
-        rollText.text = value.toString()
+        rollText.text = (1..6).random().toString()
 
         // Set the image view to display the corresponding dice image
         when (rollText.text) {
