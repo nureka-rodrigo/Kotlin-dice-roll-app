@@ -7,12 +7,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!-- ImageView to display the dice image -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:contentDescription="@string/ImageViewDescription" />
 
+    <!-- TextView to display the dice value -->
     <TextView
         android:id="@+id/textview"
         android:layout_width="wrap_content"
@@ -20,6 +22,7 @@
         android:layout_marginBottom="40dp"
         android:textSize="80sp" />
 
+    <!-- Button to roll the dice -->
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
